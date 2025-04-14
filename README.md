@@ -1,78 +1,101 @@
-# IML_Project
-ML Final Project: Traffic Congestion Level Prediction
 
-This project is aimed at predicting traffic congestion levels (Low, Medium, High) using machine learning techniques. The project uses a Random Forest Classifier with One-vs-Rest strategy and includes data preprocessing, balancing with SMOTE, and evaluation metrics.
+# 🚦 ML Final Project: Traffic Congestion Level Prediction 🚗
 
-Project Structure
+Welcome to the Traffic Congestion Level Prediction project! This project predicts traffic congestion levels (Low, Medium, High) using machine learning techniques like Random Forest with One-vs-Rest strategy, along with data preprocessing, balancing using SMOTE, and detailed evaluation metrics.
 
+---
+
+## 📂 Project Structure
+
+```
 .
-├── train.py              # Script to train the model
-├── test.py               # Script to test the model
-├── data_cleaned.csv      # Cleaned dataset
-├── model.joblib          # Saved trained model (generated after running train.py)
-├── scaler.joblib         # Saved scaler for preprocessing (generated after running train.py)
-├── label_encoder.joblib  # Saved label encoder for target classes (generated after running train.py)
-├── requirements.txt      # Python dependencies (optional)
+├── train.py              # Train the machine learning model
+├── test.py               # Test and evaluate the model
+├── data_cleaned.csv      # Cleaned dataset used for training and testing
+├── model.joblib          # Trained model (generated after running train.py)
+├── scaler.joblib         # Scaler for feature normalization (generated after running train.py)
+├── label_encoder.joblib  # Encoder for target labels (generated after running train.py)
+├── requirements.txt      # Python dependencies
 └── README.md             # Project documentation (this file)
+```
 
-Requirements
+---
 
-Python 3.x
+## ⚙️ Requirements
 
-Install the dependencies using pip:
+- Python 3.x
 
+Install dependencies using pip:
+
+```bash
 pip install -r requirements.txt
+```
 
-If you don't have a requirements.txt, you can install manually:
+If you don't have a `requirements.txt`, install manually:
 
+```bash
 pip install pandas numpy scikit-learn imbalanced-learn joblib
+```
 
-Files Description
+---
 
-train.py
+## 📄 Files Description
 
-Loads and preprocesses the data.
+### `train.py`
+✅ Loads and preprocesses the data.  
+✅ Encodes categorical features and target variable.  
+✅ Applies SMOTE to balance the dataset.  
+✅ Scales features using StandardScaler.  
+✅ Trains a Random Forest classifier with One-vs-Rest strategy.  
+✅ Saves the trained model, scaler, and label encoder for future use.
 
-Encodes categorical features and the target variable.
+### `test.py`
+✅ Loads the saved model, scaler, and label encoder.  
+✅ Prepares the test dataset.  
+✅ Performs predictions on the test data.  
+✅ Outputs evaluation metrics like accuracy, precision, recall, F1 score, classification report, and confusion matrix.
 
-Applies SMOTE to balance the dataset.
+---
 
-Scales features using StandardScaler.
+## 🚀 How to Run
 
-Trains a RandomForest classifier wrapped in One-vs-Rest.
+### Step 1: Train the model
 
-Saves the trained model, scaler, and label encoder for future use.
-
-test.py
-
-Loads the saved model, scaler, and label encoder.
-
-Prepares the test dataset.
-
-Performs predictions on the test data.
-
-Outputs evaluation metrics including accuracy, precision, recall, F1 score, classification report, and confusion matrix.
-
-How to Run
-
-Step 1: Train the model
-
-Run the following command to train the model and save necessary artifacts:
-
+```bash
 python train.py
+```
 
-After successful execution, it will generate:
+After successful execution, you will get:
 
-model.joblib
+- `model.joblib`
+- `scaler.joblib`
+- `label_encoder.joblib`
 
-scaler.joblib
+### Step 2: Test the model
 
-label_encoder.joblib
-
-Step 2: Test the model
-
-Run the following command to evaluate the trained model:
-
+```bash
 python test.py
+```
 
-This will print performance metrics to the console.
+You will see performance metrics printed in your console.
+
+---
+
+## 📝 Notes
+
+- Ensure `data_cleaned.csv` is in your project directory before running scripts.
+- For advanced use, you can extend this project by adding `predict.py` for making predictions on new data!
+
+---
+
+## 📦 Optional: Generate `requirements.txt`
+
+To generate your environment dependencies, run:
+
+```bash
+pip freeze > requirements.txt
+```
+
+---
+
+Happy coding and best of luck with your final project! 🚦🚗💡
