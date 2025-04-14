@@ -79,23 +79,8 @@ python test.py
 
 You will see performance metrics printed in your console.
 
----
 
-## 📝 Notes
-
-- Ensure `data_cleaned.csv` is in your project directory before running scripts.
-- For advanced use, you can extend this project by adding `predict.py` for making predictions on new data!
 
 ---
 
-## 📦 Optional: Generate `requirements.txt`
 
-To generate your environment dependencies, run:
-
-```bash
-pip freeze > requirements.txt
-```
-
----
-
-Happy coding and best of luck with your final project! 🚦🚗💡
