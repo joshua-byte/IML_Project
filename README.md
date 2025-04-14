@@ -14,8 +14,7 @@ Welcome to the Traffic Congestion Level Prediction project! This project predict
 ├── data_cleaned.csv      # Cleaned dataset used for training and testing
 ├── model.joblib          # Trained model (generated after running train.py)
 ├── scaler.joblib         # Scaler for feature normalization (generated after running train.py)
-├── label_encoder.joblib  # Encoder for target labels (generated after running train.py)
-├── requirements.txt      # Python dependencies
+├── label_encoder.joblib  # Encoder for target labels (generated after running train.py)    
 └── README.md             # Project documentation (this file)
 ```
 
