@@ -26,11 +26,7 @@ Welcome to the Traffic Congestion Level Prediction project! This project predict
 
 Install dependencies using pip:
 
-```bash
-pip install -r requirements.txt
-```
-
-If you don't have a `requirements.txt`, install manually:
+To install the necessary libraries use:
 
 ```bash
 pip install pandas numpy scikit-learn imbalanced-learn joblib
